@@ -1,0 +1,45 @@
+.about{
+    margin: 40px 0;
+
+    &-content{
+        display: flex;
+        justify-content: center;
+    }
+
+    &-text-box{
+        width: 50%;
+        padding: 15px 20px;
+
+        .about-line{
+            margin: 15px 0;
+        }
+        
+        .about-social-links-title{
+            margin-top: 20px ;
+        }
+
+        .about-social-links-item{
+            margin-right: 5px;
+            color: #000;
+            font-size: 22px;
+
+            &:hover{
+                color: $--color-secondary;
+                transition: .5s;
+            }
+
+        }
+
+    }
+
+    &-image-box{
+        width: 50%;
+
+        .about-photo{
+            width: 650px;
+            height: 400px;
+        }
+
+    }
+
+}

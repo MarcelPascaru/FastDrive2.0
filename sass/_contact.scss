@@ -1,0 +1,59 @@
+.contact{
+    background: url(../Media/Other/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .contact-title{
+        text-align: center;
+        color: #fff;
+        padding-top: 25px;
+    }
+
+    .form{
+        margin: 15px 25px;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        border-radius: 10px;
+        padding: 20px 25px;
+
+        form{
+            
+
+            .left-box{
+                width: 50%;
+            }
+
+            .right-box{
+                width: 50%;
+            }
+
+
+            .input-title{
+                color: #fff;
+            }
+
+            .input-item{
+                width: 100%;
+                padding: 10px 15px;
+            }
+
+            .submit-btn{
+                font-size: 18px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                background: #fff;
+
+                &:hover{
+                    background: $--color-secondary;
+                    color:$--color-primary;
+                    transition: .5s;
+                }
+
+            }
+
+        }
+
+    }
+    
+
+}

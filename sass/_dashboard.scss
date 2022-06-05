@@ -1,0 +1,48 @@
+.dashboard{
+    margin: 0;
+    padding: 0;
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+
+        .logout-btn{
+            padding: 5px 10px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            background: $--color-secondary;
+            margin-right: 10px;
+            color: $--color-primary;
+            font-size: 18px;
+            font-weight: 800;
+
+            &:hover{
+                background: $--color-primary;
+                color: $--color-secondary;
+                transition: .5s;
+            }
+        }
+
+        .home-btn{
+            padding: 5px 10px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            background: $--color-secondary;
+            color: $--color-primary;
+            font-size: 18px;
+            font-weight: 800;
+
+            &:hover{
+                background: $--color-primary;
+                color: $--color-secondary;
+                transition: .5s;
+            }
+        }
+
+    }
+
+}

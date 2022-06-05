@@ -1,0 +1,65 @@
+header{
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    .header-content{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+        }
+
+        .fa-car{
+            font-size:26px ;
+            color: #fff;
+        }
+
+        .logo-text{
+            font-family: 'Kaushan Script',sans-serif;
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px;
+        }
+
+        .nav-bar{
+            margin: 0 250px;
+        }
+
+        .nav-bar-item{
+            text-decoration: none;
+            color: #fff;
+            margin-right: 20px;
+        }
+
+        .nav-bar-item:hover{
+            color: $--color-secondary;
+        }
+
+        .fa-user{
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        .log-in-btn{
+            color: #fff;
+        }
+
+        .log-in{
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .log-in:hover{
+            background-color: $--color-secondary;
+            transition: .5s;
+        }
+
+    }
+}

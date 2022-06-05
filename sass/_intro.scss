@@ -1,0 +1,61 @@
+.intro{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Media/Other/intro-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    &-content{
+        margin-top: 115px;
+    }
+
+    &-title{
+        color: #fff;
+        font-size: 72px;
+        width: 35%;
+        line-height: 1;
+        margin-bottom: 25px;
+    }
+
+    &-text{
+        color: #fff;
+    }
+
+    &-author{
+        color: #fff;
+        font-style: italic;
+    }
+
+    &-social-links{
+        margin: 45px 0 20px 0;
+    }
+
+    &-social-item{
+        color: #fff;
+        font-size: 22px;
+        margin-right: 10px;
+
+        &:hover{
+            color: $--color-secondary;
+            transition: .5s;
+        }
+
+    }
+
+    &-btn{
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: none;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover{
+            background: $--color-secondary;
+            transition: .5s;
+        }
+
+    }
+
+}
