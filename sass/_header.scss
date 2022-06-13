@@ -1,65 +1,42 @@
 header{
-    background: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
+    background-color: $--color-primary;
 
     .header-content{
         display: flex;
-        justify-content:space-between;
         align-items: center;
+        justify-content: space-between;
 
-        a{
-            text-decoration: none;
-        }
+        .logo{
+            
+            h3{
+                color: $--color-fourth;
+            }
 
-        .fa-car{
-            font-size:26px ;
-            color: #fff;
-        }
+            span{
+                color: #fff;
+            }
 
-        .logo-text{
-            font-family: 'Kaushan Script',sans-serif;
-            color: #fff;
-            text-decoration: none;
-            font-size: 26px;
         }
 
         .nav-bar{
-            margin: 0 250px;
-        }
 
-        .nav-bar-item{
-            text-decoration: none;
-            color: #fff;
-            margin-right: 20px;
-        }
+            &-item{
+                margin-right: 0.5rem;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 400;
 
-        .nav-bar-item:hover{
-            color: $--color-secondary;
-        }
+                &:hover{
+                    border-bottom: 1px solid $--color-fourth;
+                    color: $--color-fourth;
+                    transition: .5s;
+                }
 
-        .fa-user{
-            color: #fff;
-            margin-right: 5px;
-        }
+            }
 
-        .log-in-btn{
-            color: #fff;
-        }
-
-        .log-in{
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .log-in:hover{
-            background-color: $--color-secondary;
-            transition: .5s;
         }
 
     }
+
 }

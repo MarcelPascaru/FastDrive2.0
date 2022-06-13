@@ -1,43 +1,86 @@
-.about{
-    margin: 40px 0;
+.about {
+    background-color: $--color-primary;
+    margin-top: 560px;
+    position: relative;
 
-    &-content{
-        display: flex;
-        justify-content: center;
-    }
+    &-content {
 
-    &-text-box{
-        width: 50%;
-        padding: 15px 20px;
+        .title {
+            text-align: center;
+            margin: 25px 0;
+            color: #fff;
 
-        .about-line{
-            margin: 15px 0;
-        }
-        
-        .about-social-links-title{
-            margin-top: 20px ;
-        }
+            span {
+                color: #fff;
+            }
 
-        .about-social-links-item{
-            margin-right: 5px;
-            color: #000;
-            font-size: 22px;
-
-            &:hover{
-                color: $--color-secondary;
-                transition: .5s;
+            b {
+                color: $--color-fourth;
             }
 
         }
 
-    }
+        .accordion {
+            width: 90%;
+            max-width: 1000px;
+            margin: 2rem auto;
 
-    &-image-box{
-        width: 50%;
+            .accordion-item {
+                background-color: rgb(29, 28, 28);
+                margin: 1rem 0;
+                border-radius: 16px;
 
-        .about-photo{
-            width: 650px;
-            height: 400px;
+                .accordion-item-header {
+                    color: #fff;
+                    padding: 0.5rem 3rem 0.5rem 1rem;
+                    min-height: 3.5rem;
+                    line-height: 1.25rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 22px;
+
+                    &::after {
+                        content: "\002B";
+                        font-size: 2rem;
+                        position: absolute;
+                        right: 1rem;
+                        color: #fff;
+                        transition: transform .5s ease-in-out;
+                    }
+
+                }
+
+                .accordion-item-header.active::after {
+                    // content: "\2212";
+                    transform: rotate(45deg);
+                }
+
+                .accordion-item-body {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.5s ease-out;
+
+                    &-content {
+                        color: #fff;
+                        text-indent: 45px;
+                        line-height: 1.5;
+                        padding: 1rem;
+                        border-top: 1px solid $--color-fourth;
+                        border-image: linear-gradient(to right, $--color-fourth, $--color-sixth) 1;
+
+                    }
+
+                }
+
+                .accordion-item-header.active + .accordion-item-body {
+                    max-height: 250px;
+                }
+
+            }
+
         }
 
     }
