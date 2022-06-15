@@ -1,0 +1,162 @@
+.slider-section{
+    background-color: $--color-primary;
+    padding: 2rem 0;
+
+    .title{
+        text-align: center;
+        color: #fff;
+
+        span{
+            color: $--color-fourth;
+        }
+
+    }
+
+    .cards-container{
+        width: 100%;
+        margin: auto;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card-item{
+            width: 33.00000%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            background-color: rgb(29, 28, 28);
+            border-radius: 1rem;
+            margin-bottom: 15px;
+
+            .card-title{
+                color: #fff;
+            }
+
+            .card-info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px;
+
+                i{
+                    margin-right: 0.3rem;
+                    color: $--color-fourth;
+                }
+
+                span{
+                    color: #fff;
+                }
+
+            }
+
+            .popup{
+
+                .overlay{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: rgba(0,0,0,0.7);
+                    z-index: 1000;
+                    display: none;
+                }
+
+                .popup-content{
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%) scale(0);
+                    background: #fff;
+                    width: 1050px;
+                    height: auto;
+                    z-index: 1050;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    border: 1rem;
+                    border-radius: 1rem;
+
+                    .close-btn{
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 25px;
+                        color: #000;
+                        font-weight: 600;
+                        line-height: 30px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+
+                    .popup-title{
+                        padding-top: 15px;
+                        text-align: center;
+                    }
+
+                    .contains{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 25px 35px;
+                        margin: 30px 0;
+
+                        .popup-img{
+                            display: flex;
+                            justify-content: center;
+                            width: 50%;
+
+                            .popup-photo{
+                                border-radius: 15px;
+                                margin-right: 20px;
+                            }
+
+                        }
+
+                        .cars-info{
+                            width: 50%;
+                            
+                            .cars-info-item{
+                                display: flex;
+                                align-items: center;
+
+                                i{
+                                    margin-right: 0.3rem;
+                                }
+
+                            }
+
+                        }
+
+                        .order-btn{
+                            position: absolute;
+                            bottom: 20px;
+                            left: 475px;
+                            border: 1px solid $--color-fourth;
+                        }
+
+                    }
+
+                }
+
+            }
+            
+            .popup.active .overlay{
+                display: block;
+           }
+           
+           .popup.active .popup-content{
+               transition: all 300ms ease-in-out;
+               transform: translate(-50%,-50%) scale(1);
+           }
+
+        }
+
+    }
+
+}

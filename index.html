@@ -49,14 +49,20 @@
                         <a href="#" class="discover-btn btn-animated"><span>Our History</span></a>
                     </div>
                     <div class="info-box">
-                        <h3>+8<br><span>Years<br>of<br>Experience</span></h3>
-                        <h3>+1400<br><span>Customers<br>Served</span></h3>
-                        <h3>+30<br><span>Models<br>of<br>Cars</span></h3>
+                        <div class="info-box-item">
+                            <h3>+8<br><span>Years<br>of<br>Experience</span></h3>
+                        </div>
+                        <div class="info-box-item">
+                            <h3>+1400<br><span>Customers<br>Served</span></h3>
+                        </div>
+                        <div class="info-box-item">
+                            <h3>+300<br><span>Models<br>of<br>Cars</span></h3>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="image-box">
-                    <img src="./Media/Other/intro-photo.png" alt="" class="intro-photo">
-                </div> -->
+                <div class="image-box">
+                    <img src="./Media/Other/intro-photo1.png" alt="" class="intro-photo">
+                </div>
             </div>
         </div>
     </section>
@@ -137,7 +143,367 @@
     </section>
     <!-- about us section end -->
 
+    <!-- services section start  -->
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="title">Special<span>Offers</span></h1>
+            <div class="services-content">
+                <div class="services-item">
+                    <div class="services-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="service-title">Secured Payment<br>Guarantee</h3>
+                </div>
+
+                <div class="services-item">
+                    <div class="services-icon">
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <h3 class="service-title">Help Center &<br>Support 24/7</h3>
+                </div>
+
+                <div class="services-item">
+                    <div class="services-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="service-title">Booking Luxury &<br>Sport Cars</h3>
+                </div>
+
+                <div class="services-item">
+                    <div class="services-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="service-title">Corporate &<br>Bussines Services</h3>
+                </div>
+
+                <div class="services-item">
+                    <div class="services-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <h3 class="service-title">Car Sharing<br>Options</h3>
+                </div>
+
+                <div class="services-item">
+                    <div class="services-icon">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="service-title">Accesible<br>Price</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+    <!-- slider section start  -->
+    <div class="slider-section">
+        <div class="container">
+            <h1 class="title">The most Popular <span>Orders</span></h1>
+            <div class="cards-container">
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="./Media/ElectricCars/tesla-model-s-min.png" alt="" class="card-photo">
+                    </div>
+                    <h3 class="card-title">Testa Model-S</h3>
+                    <div class="card-info">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>75$/1day</span>
+                    </div>
+
+                    <div class="popup" id="popup-1">
+                        <div class="overlay"></div>
+                        <div class="popup-content">
+                            <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+                            <h1 class="popup-title">Tesla Model-S</h1>
+                            <div class="contains">
+                                <div class="popup-img">
+                                    <img src="./Media/ElectricCars/tesla-model-s-min.png" alt="" class="popup-photo">
+                                </div>
+                                <div class="cars-info">
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Class:<span>Electric</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Doors:<span>4</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Kilometers:<span>1.200.000</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-users"></i>
+                                        <h4>Passagers:<span>5</span></h4>
+                                    </div>
+                                </div>
+                                <button class="order-btn btn-animated"><span>Order Now</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-1')"><span>See More</span></button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="./Media/ElectricCars/porsche-taycan-min.png" alt="" class="card-photo">
+                    </div>
+                    <h3 class="card-title">Porsche Taycan</h3>
+                    <div class="card-info">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>85$/1day</span>
+                    </div>
+
+                    <div class="popup" id="popup-2">
+                        <div class="overlay"></div>
+                        <div class="popup-content">
+                            <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+                            <h1 class="popup-title">Porsche Taycan</h1>
+                            <div class="contains">
+                                <div class="popup-img">
+                                    <img src="./Media/ElectricCars/porsche-taycan-min.png" alt="" class="popup-photo">
+                                </div>
+                                <div class="cars-info">
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Class:<span>Electric</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Doors:<span>4</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Kilometers:<span>1.200.000</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-users"></i>
+                                        <h4>Passagers:<span>5</span></h4>
+                                    </div>
+                                </div>
+                                <button class="order-btn btn-animated"><span>Order Now</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-2')"><span>See More</span></button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="./Media/ManualCars/audi-q6-min.png" alt="" class="card-photo">
+                    </div>
+                    <h3 class="card-title">Audi Q-6</h3>
+                    <div class="card-info">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>35$/1day</span>
+                    </div>
+
+                    <div class="popup" id="popup-3">
+                        <div class="overlay"></div>
+                        <div class="popup-content">
+                            <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+                            <h1 class="popup-title">Audi Q-6</h1>
+                            <div class="contains">
+                                <div class="popup-img">
+                                    <img src="./Media/ManualCars/audi-q6-min.png" alt="" class="popup-photo">
+                                </div>
+                                <div class="cars-info">
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Class:<span>Electric</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Doors:<span>4</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Kilometers:<span>1.200.000</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-users"></i>
+                                        <h4>Passagers:<span>5</span></h4>
+                                    </div>
+                                </div>
+                                <button class="order-btn btn-animated"><span>Order Now</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-3')"><span>See More</span></button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="./Media/ManualCars/volkswagen-tiguan-min.png" alt="" class="card-photo">
+                    </div>
+                    <h3 class="card-title">Volkswagen Tiguan</h3>
+                    <div class="card-info">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>35$/1day</span>
+                    </div>
+
+                    <div class="popup" id="popup-4">
+                        <div class="overlay"></div>
+                        <div class="popup-content">
+                            <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+                            <h1 class="popup-title">Volkswagen Tiguan</h1>
+                            <div class="contains">
+                                <div class="popup-img">
+                                    <img src="./Media/ManualCars/volkswagen-tiguan-min.png" alt="" class="popup-photo">
+                                </div>
+                                <div class="cars-info">
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Class:<span>Electric</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Doors:<span>4</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Kilometers:<span>1.200.000</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-users"></i>
+                                        <h4>Passagers:<span>5</span></h4>
+                                    </div>
+                                </div>
+                                <button class="order-btn btn-animated"><span>Order Now</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-4')"><span>See More</span></button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="./Media/SportCars/audi-rs7-min.png" alt="" class="card-photo">
+                    </div>
+                    <h3 class="card-title">Audi RS-7</h3>
+                    <div class="card-info">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>95$/1day</span>
+                    </div>
+
+                    <div class="popup" id="popup-5">
+                        <div class="overlay"></div>
+                        <div class="popup-content">
+                            <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+                            <h1 class="popup-title">Audi RS-7</h1>
+                            <div class="contains">
+                                <div class="popup-img">
+                                    <img src="./Media/SportCars/audi-rs7-min.png" alt="" class="popup-photo">
+                                </div>
+                                <div class="cars-info">
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Class:<span>Electric</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Doors:<span>4</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Kilometers:<span>1.200.000</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-users"></i>
+                                        <h4>Passagers:<span>5</span></h4>
+                                    </div>
+                                </div>
+                                <button class="order-btn btn-animated"><span>Order Now</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-5')"><span>See More</span></button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-img">
+                        <img src="./Media/SportCars/nissan-gtr-min.png" alt="" class="card-photo">
+                    </div>
+                    <h3 class="card-title">Nissan GTR</h3>
+                    <div class="card-info">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>85$/1day</span>
+                    </div>
+
+                    <div class="popup" id="popup-6">
+                        <div class="overlay"></div>
+                        <div class="popup-content">
+                            <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
+                            <h1 class="popup-title">Nissan GTR</h1>
+                            <div class="contains">
+                                <div class="popup-img">
+                                    <img src="./Media/SportCars/nissan-gtr-min.png" alt="" class="popup-photo">
+                                </div>
+                                <div class="cars-info">
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Class:<span>Electric</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-car"></i>
+                                        <h4>Doors:<span>4</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-gauge"></i>
+                                        <h4>Kilometers:<span>1.200.000</span></h4>
+                                    </div>
+                                    <div class="cars-info-item">
+                                        <i class="fa-solid fa-users"></i>
+                                        <h4>Passagers:<span>5</span></h4>
+                                    </div>
+                                </div>
+                                <button class="order-btn btn-animated"><span>Order Now</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-6')"><span>See More</span></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- slider section end -->
+
+    <button id="scrollBtn" onclick="topFunction()">Back</button>
+
     <script src="./script.js"></script>
+
+    
 
 </body>
 
