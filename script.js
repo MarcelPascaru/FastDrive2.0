@@ -1,5 +1,12 @@
+//variable for accordion
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+//variable for back-scroll button
 const topBtn = document.querySelector("#scrollBtn");
+//variables for offer tab
+const tabsBtn   = document.querySelectorAll(".tabs-btn");
+const tabsItems = document.querySelectorAll(".tabs-item");
+
+
 
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
@@ -13,7 +20,7 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 window.addEventListener("scroll", function() {
     let scrollPos = window.scrollY;
 
-    if(scrollPos < 30){
+    if(scrollPos < 50){
         topBtn.classList.add("remove");
     }else{
         topBtn.classList.remove("remove");
@@ -30,3 +37,29 @@ function topFunction(){
 function togglePopup(popupId) {
     document.getElementById(popupId).classList.toggle("active");
 }
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if( ! currentBtn.classList.contains('working') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('working');
+            });
+    
+            tabsItems.forEach(function(item) {
+                item.classList.remove('working');
+                console.log("1000");
+            });
+    
+            currentBtn.classList.add('working');
+            currentTab.classList.add('working');
+        }
+    });
+}
+
+document.querySelector('.tabs-btn').click();

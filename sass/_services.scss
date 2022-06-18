@@ -2,6 +2,8 @@
     margin: 50px 0;
     background-color: $--color-primary;
 
+    animation: services-animation 1s linear forwards;
+
     .title{
         text-align: center;
         font-size: 2rem;

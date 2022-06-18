@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>FastDrive</title>
+    <link rel="shortcut icon" href="./Media/Other/sport-car.png" type="image/x-icon">
     <link rel="stylesheet" href="./sass/main.css">
     <script src="https://kit.fontawesome.com/b1544e75c9.js" crossorigin="anonymous"></script>
     <link
@@ -22,7 +23,7 @@
                 </div>
                 <div class="nav-bar">
                     <a href="#" class="nav-bar-item">home</a>
-                    <a href="#" class="nav-bar-item">about us</a>
+                    <a href="#about" class="nav-bar-item">about us</a>
                     <a href="#" class="nav-bar-item">our cars</a>
                     <a href="#" class="nav-bar-item">pages</a>
                     <a href="#" class="nav-bar-item">contact</a>
@@ -69,11 +70,11 @@
     <!-- intro section end -->
 
     <!-- about us section start  -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about-content">
                 <h1 class="title">About <span>Fast</span><b>Driver</b></h1>
-                <div class="accordion">
+                <div class="accordion" id="accordion">
                     <div class="accordion-item">
                         <div class="accordion-item-header">Company Overview</div>
                         <div class="accordion-item-body">
@@ -143,6 +144,104 @@
     </section>
     <!-- about us section end -->
 
+    <!-- offers section start -->
+    <section class="offers">
+        <div class="container">
+            <h1 class="title">What we can offer?</h1>
+            <div class="offers-content">
+                <div class="overlay"></div>
+               <div class="tabs">
+                <div class="buttons">
+                    <button class="tabs-btn btn-animated" type="button" data-tab="#tab-1"><span>Luxury</span></button>
+                    <button class="tabs-btn btn-animated" type="button" data-tab="#tab-3"><span>Electric</span></button>
+                    <button class="tabs-btn btn-animated" type="button" data-tab="#tab-2"><span>Econom</span></button>
+                    <button class="tabs-btn btn-animated" type="button" data-tab="#tab-5"><span>Sport</span></button>
+                    <button class="tabs-btn btn-animated" type="button" data-tab="#tab-4"><span>Jeeps</span></button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tabs-item" id="tab-1">
+                        <div class="tabs-image">
+                            <img src="./Media/Other/offer-luxury.jpg" class="tabs-photo" alt="">
+                        </div>
+                        <div class="info-text-box">
+                            <h3>Luxury Cars</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                            </p>
+                            <button class="info-text-box-btn btn-animated"><span>See More</span></button>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-2">
+                        <div class="tabs-image">
+                            <img src="./Media/Other/offer-econom.jpg" class="tabs-photo" alt="">
+                        </div>
+                        <div class="info-text-box">
+                            <h3>Econom Cars</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                            </p>
+                            <button class="info-text-box-btn btn-animated"><span>See More</span></button>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-3">
+                        <div class="tabs-image">
+                            <img src="./Media/Other/offer-electric.jpg" class="tabs-photo" alt="">
+                        </div>
+                        <div class="info-text-box">
+                            <h3>Electric Cars</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                            </p>
+                            <button class="info-text-box-btn btn-animated"><span>See More</span></button>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-4">
+                        <div class="tabs-image">
+                            <img src="./Media/Other/offer-jeep.jpg" class="tabs-photo" alt="">
+                        </div>
+                        <div class="info-text-box">
+                            <h3>Jeep Cars</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                            </p>
+                            <button class="info-text-box-btn btn-animated"><span>See More</span></button>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-5">
+                        <div class="tabs-image">
+                            <img src="./Media/Other/offer-sport.jpg" class="tabs-photo" alt="">
+                        </div>
+                        <div class="info-text-box">
+                            <h3>Sport Cars</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam commodi officia,
+                                corporis sed voluptate eius neque odit, totam repellendus voluptatibus temporibus quod
+                                sapiente deserunt, harum distinctio ut cum tenetur blanditiis.
+                            </p>
+                            <button class="info-text-box-btn btn-animated"><span>See More</span></button>
+                        </div>
+                    </div>
+               </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offers section end -->
+
     <!-- services section start  -->
     <section class="services" id="services">
         <div class="container">
@@ -196,7 +295,7 @@
     <!-- services section end -->
 
     <!-- slider section start  -->
-    <div class="slider-section">
+    <div class="card-section">
         <div class="container">
             <h1 class="title">The most Popular <span>Orders</span></h1>
             <div class="cards-container">
@@ -246,7 +345,8 @@
                         </div>
                     </div>
 
-                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-1')"><span>See More</span></button>
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-1')"><span>See
+                            More</span></button>
                 </div>
 
                 <div class="card-item">
@@ -295,7 +395,8 @@
                         </div>
                     </div>
 
-                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-2')"><span>See More</span></button>
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-2')"><span>See
+                            More</span></button>
                 </div>
 
                 <div class="card-item">
@@ -344,7 +445,8 @@
                         </div>
                     </div>
 
-                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-3')"><span>See More</span></button>
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-3')"><span>See
+                            More</span></button>
                 </div>
 
                 <div class="card-item">
@@ -393,7 +495,8 @@
                         </div>
                     </div>
 
-                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-4')"><span>See More</span></button>
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-4')"><span>See
+                            More</span></button>
                 </div>
 
                 <div class="card-item">
@@ -442,7 +545,8 @@
                         </div>
                     </div>
 
-                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-5')"><span>See More</span></button>
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-5')"><span>See
+                            More</span></button>
                 </div>
 
                 <div class="card-item">
@@ -491,7 +595,8 @@
                         </div>
                     </div>
 
-                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-6')"><span>See More</span></button>
+                    <button class="see-more-btn btn-animated" onclick="togglePopup('popup-6')"><span>See
+                            More</span></button>
                 </div>
 
             </div>
@@ -499,12 +604,72 @@
     </div>
     <!-- slider section end -->
 
+    <!-- partners section start  -->
+    <div class="partners">
+        <div class="container">
+            <h1 class="title">Our <span>Partners</span></h1>
+            <div class="partners-content">
+                <div class="partners-item">
+                    <img src="./Media/Other/partner-photo-1.png" alt="" class="partner-photo">
+                </div>
+                <div class="partners-item">
+                    <img src="./Media/Other/partner-photo-2.png" alt="" class="partner-photo">
+                </div>
+                <div class="partners-item">
+                    <img src="./Media/Other/partner-photo-3.png" alt="" class="partner-photo">
+                </div>
+                <div class="partners-item">
+                    <img src="./Media/Other/partner-photo-4.png" alt="" class="partner-photo">
+                </div>
+                <div class="partners-item">
+                    <img src="./Media/Other/partner-photo-5.png" alt="" class="partner-photo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partners section end -->
+
+    <!-- footer section start  -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-box">
+                    <h1 class="logo">Fast<span>Driver.</span></h1>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae provident
+                        nulla repudiandae, aliquid atque maxime sed dolorem suscipit incidunt voluptates aperiam velit
+                        numquam, aspernatur perspiciatis autem sapiente cupiditate facilis.
+                    </p>
+                </div>
+                <div class="footer-box">
+                    <h1 class="title">Contact Us</h1>
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Main Office Address</span>
+                    </div>
+                    <p>str.Stefan cel Mare 98/2</p>
+                    <div class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>08:00am - 09:30pm</span>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>fastdrive95@gmail.com</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+373-764-923-41</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
     <button id="scrollBtn" onclick="topFunction()">Back</button>
 
     <script src="./script.js"></script>
-
     
-
 </body>
 
 </html>

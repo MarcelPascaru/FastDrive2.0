@@ -1,0 +1,40 @@
+.partners{
+    background-color: $--color-primary;
+    margin: 50px 0;
+
+    .title{
+        color: #fff;
+        text-align: center;
+
+        span{
+            color: $--color-fourth;
+        }
+
+    }
+
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .partners-item{
+            margin: 30px 0;
+            
+            .partner-photo{
+                width: 200px;
+                height: auto;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $--color-fourth;
+                    transform: translateY(-15px);
+                    transition: .5s;
+                }
+
+            }
+
+        }
+
+    }
+
+}

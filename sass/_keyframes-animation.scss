@@ -1,0 +1,76 @@
+@keyframes intro-title{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+
+@keyframes intro-subtitle{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(5px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes intro-buttons{
+    0%{
+        transform: translateX(-400px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes info-box{
+    0%{
+        transform: translateY(300px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro-photo{
+    0%{
+        transform: translateX(400px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes accordion{
+    0%{
+        transform: translateX(-800px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes services-animation{
+    0%{
+        
+    }
+
+    100%{
+        
+    }
+}
+
