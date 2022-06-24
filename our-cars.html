@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./Media/Other/sport-car.png" type="image/x-icon">
+    <link rel="stylesheet" href="./sass/main.css">
+    <script src="https://kit.fontawesome.com/b1544e75c9.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kaushan+Script&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Our Cars | FastDriver</title>
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h3>Fast<span>Driver.</span></h3>
+                </div>
+                <div class="nav-bar">
+                    <a href="./index.html" class="nav-bar-item">home</a>
+                    <a href="#about" class="nav-bar-item">about us</a>
+                    <a href="./our-cars.html" class="nav-bar-item">our cars</a>
+                    <a href="#" class="nav-bar-item">pages</a>
+                    <a href="#" class="nav-bar-item">contact</a>
+                </div>
+                <div class="log-in">
+                    <a href="#" class="log-in btn-animated">
+                        <span>Login</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- cars section start -->
+    <section class="our-cars">
+        <div class="container">
+
+            <div class="search-input">
+                <input type="text" onkeyup="filter()" id="search" class="search" placeholder="Search here...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="buttons">
+                <button class="filter-button btn-animated" data-filter="all"><span>All</span></button>
+                <button class="filter-button btn-animated" data-filter="luxury"><span>Luxury</span></button>
+                <button class="filter-button btn-animated" data-filter="econom"><span>Econom</span></button>
+                <button class="filter-button btn-animated" data-filter="sport"><span>Sport</span></button>
+                <button class="filter-button btn-animated" data-filter="electric"><span>Electric</span></button>
+                <button class="filter-button btn-animated" data-filter="jeeps"><span>Jeeps</span></button>
+            </div>
+
+            <div class="cars-container" id="cars">
+
+
+                <!-- luxury cars  -->
+                <div class="cars-item" data-item="luxury">
+                    <div class="cars-image">
+                        <img src="./Media/LuxuryCars/aston-martin.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Aston Martin</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Luxury</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="luxury">
+                    <div class="cars-image">
+                        <img src="./Media/LuxuryCars/bentley.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Bentley</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Luxury</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="luxury">
+                    <div class="cars-image">
+                        <img src="./Media/LuxuryCars/bmw.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">BMW</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Luxury</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="luxury">
+                    <div class="cars-image">
+                        <img src="./Media/LuxuryCars/masserati.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Masserati</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Luxury</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="luxury">
+                    <div class="cars-image">
+                        <img src="./Media/LuxuryCars/mercedes-benz-e-class.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Mercedes-Benz-E-Class</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Luxury</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+                <!-- luxury cars  -->
+
+
+
+                <!-- econom cars  -->
+                <div class="cars-item" data-item="econom">
+                    <div class="cars-image">
+                        <img src="./Media/ManualCars/audi-q6-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Audi Q6</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Econom</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="econom">
+                    <div class="cars-image">
+                        <img src="./Media/ManualCars/ford-focus-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Ford Focus</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Econom</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="econom">
+                    <div class="cars-image">
+                        <img src="./Media/ManualCars/range-rover-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Range-Rover</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Econom</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="econom">
+                    <div class="cars-image">
+                        <img src="./Media/ManualCars/skoda-octavia-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Skoda-Octavia</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Econom</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="econom">
+                    <div class="cars-image">
+                        <img src="./Media/ManualCars/volkswagen-tiguan-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Volkswagen Tiguan</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Econom</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+                <!-- econom cars  -->
+
+
+
+                <!-- sport cars  -->
+                <div class="cars-item" data-item="sport">
+                    <div class="cars-image">
+                        <img src="./Media/SportCars/aston-martin-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Aston Martin</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Sport</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="sport">
+                    <div class="cars-image">
+                        <img src="./Media/SportCars/audi-rs7-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Audi RS-7</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Sport</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="sport">
+                    <div class="cars-image">
+                        <img src="./Media/SportCars/ferrari-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Ferrari</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Sport</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="sport">
+                    <div class="cars-image">
+                        <img src="./Media/SportCars/mercedes-amg-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Mercedes-Benz-AMG</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Sport</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+                <div class="cars-item" data-item="sport">
+                    <div class="cars-image">
+                        <img src="./Media/SportCars/nissan-gtr-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Nissan GTR</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Sport</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+                <!-- sport cars  -->
+
+
+                <!-- electric cars  -->
+                <div class="cars-item" data-item="electric">
+                    <div class="cars-image">
+                        <img src="./Media/ElectricCars/porsche-taycan-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Porsche Taycan</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Electric</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="electric">
+                    <div class="cars-image">
+                        <img src="./Media/ElectricCars/tesla-model-3-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Tesla-Model-3</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Electric</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="electric">
+                    <div class="cars-image">
+                        <img src="./Media/ElectricCars/tesla-model-s-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Tesla-Model-S</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Electric</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="electric">
+                    <div class="cars-image">
+                        <img src="./Media/ElectricCars/tesla-model-x-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Tesla-Model-X</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Electric</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="cars-item" data-item="electric">
+                    <div class="cars-image">
+                        <img src="./Media/ElectricCars/toyota-prius-min.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Toyota-Prius</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Electric</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+                <!-- electric cars  -->
+
+
+
+                <!-- SVUs cars  -->
+                <div class="cars-item" data-item="jeeps">
+                    <div class="cars-image">
+                        <img src="./Media/SUVsCars/cadillac.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Cadillac</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Jeeps</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="jeeps">
+                    <div class="cars-image">
+                        <img src="./Media/SUVsCars/hyundai.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Hyundai</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Jeeps</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="jeeps">
+                    <div class="cars-image">
+                        <img src="./Media/SUVsCars/jeep.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Jeep</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Jeeps</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="jeeps">
+                    <div class="cars-image">
+                        <img src="./Media/SUVsCars/range-rover.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Range-Rover</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Jeeps</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+
+
+
+                <div class="cars-item" data-item="jeeps">
+                    <div class="cars-image">
+                        <img src="./Media/SUVsCars/toyota.png" alt="" class="cars-photo">
+                    </div>
+                    <div class="cars-text">
+                        <h3 class="title">Toyota</h3>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Class:<span>Jeeps</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Engine Range:<span>100 kWh (360 MJ)</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Doors:<span>4</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-gauge"></i>
+                            <h4>Kilometers:<span>1.200.000</span></h4>
+                        </div>
+                        <div class="cars-info-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Passagers:<span>5</span></h4>
+                        </div>
+                        <button class="cars-btn btn-animated"><span>Order Now</span></button>
+                    </div>
+                </div>
+                <!-- SVUs cars  -->
+
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+    </section>
+    <!-- cars section end -->
+
+</body>
+
+</html>

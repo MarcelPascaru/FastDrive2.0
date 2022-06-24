@@ -1,0 +1,130 @@
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 600px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $--color-primary;
+    perspective: 1000px;
+
+    .inner-box{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+
+        .login-form,.register-form{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 0.938rem;
+            box-sizing: border-box;
+            backface-visibility: hidden;
+        }
+
+        .register-form{
+            transform: rotateY(180deg);
+            transition: transform 300ms ease-in-out 0ms;
+        }
+
+        .title{
+            text-align: center;
+            font-size: 1.125rem;
+            color: #fff;
+            margin: 0.625rem 0;
+        }
+    
+        .subtitle{
+            text-align: center;
+            color: #fff;
+            font-size: 0.875rem;
+            margin-bottom: 0.625rem;
+        }
+    
+        .form-group{
+            margin-bottom: 0.625rem;
+            display: flex;
+            flex-wrap: wrap;
+    
+            label{
+                color: #fff;
+            }
+            
+            .input-group{
+                width: 100%;
+                position: relative;
+
+                input{
+                    width: 100%;
+                    padding: 0.313rem 0;
+                    border: none;
+                    border-bottom: 2px solid #fff;
+                    background: transparent;
+                    outline: none;
+                    color: #fff;
+
+                    &:focus + i,:not(:placeholder-shown) + i{
+                        color: $--color-sixth;
+                    }
+
+                    &:valid:not(:placeholder-shown){
+                        border-bottom-color:var(--green) ;
+                    }
+
+                    &:valid:not(:placeholder-shown) + i{
+                        color: var(--green);
+                    }
+
+                    &:invalid:not(:placeholder-shown){
+                        border-bottom-color:var(--red) ;
+                    }
+
+                    &:invalid:not(:placeholder-shown) + i{
+                        color: var(--red);
+                    }
+
+                }
+
+                i{
+                    color: #fff;
+                    position: absolute;
+                    top: 5px;
+                    right: 0;
+                }
+
+            }
+    
+            .login-btn{
+                width: 47%;
+            }
+    
+            .cancel-btn{
+                margin-left: 0.938rem;
+                width: 47%;
+                
+                a{
+                    color: $--color-primary;
+                    text-decoration: none;
+                }
+    
+            }
+            
+            .help-text{
+                color: #fff;
+                font-size: 0.875rem;
+                font-weight: 100;
+                margin: 0.313rem 0;
+            }
+    
+            .register-link{
+                margin-left: 0.625rem;
+            }
+    
+        }
+
+    }
+
+}

@@ -14,13 +14,11 @@
     0%{
         opacity: 0;
         transform: rotateY(90deg);
-        filter: blur(5px);
     }
 
     100%{
         opacity: 1;
         transform: rotateY(0);
-        filter: blur(0);
     }
 }
 
@@ -46,7 +44,7 @@
 
 @keyframes intro-photo{
     0%{
-        transform: translateX(400px);
+        transform: translateX(90px);
     }
 
     100%{
@@ -71,6 +69,18 @@
 
     100%{
         
+    }
+}
+
+@keyframes cards-animation{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
     }
 }
 

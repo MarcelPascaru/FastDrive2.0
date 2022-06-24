@@ -7,16 +7,16 @@ const tabsBtn   = document.querySelectorAll(".tabs-btn");
 const tabsItems = document.querySelectorAll(".tabs-item");
 
 
-
+//accordion start
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
         accordionItemHeader.classList.toggle("active");
     });
 });
+//accordion end
 
 
-
-//scrollBtn appeare after 30 scrollPosition
+//scrollBtn appeare after 30 scrollPosition start
 window.addEventListener("scroll", function() {
     let scrollPos = window.scrollY;
 
@@ -27,17 +27,23 @@ window.addEventListener("scroll", function() {
     }
 })
 
-//on click you go on the top of page 
+//on click you go on the top of page  
 function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+//scrollbar end 
 
 
+
+//popup start 
 function togglePopup(popupId) {
     document.getElementById(popupId).classList.toggle("active");
 }
+//popup end
 
+
+//tabs start
 tabsBtn.forEach(onTabClick);
 
 function onTabClick(item) {
@@ -63,3 +69,5 @@ function onTabClick(item) {
 }
 
 document.querySelector('.tabs-btn').click();
+//tabs end
+
